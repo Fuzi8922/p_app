@@ -1,0 +1,5 @@
+<h1>でっけ〜〜〜〜〜〜〜アイスクリーム</h1>
+<%= form_with url:"/tweets",method: :post,local: true do |form| %>
+  <%= form.text_field :content %>
+  <%= form.submit "食したい" %>
+<% end %>

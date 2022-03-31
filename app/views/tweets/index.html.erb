@@ -1,0 +1,13 @@
+<h1>ツイッター（大嘘）<h1>
+<%= link_to "狂ったリビドーを飼い慣らすロックな奴ら" , "tweets/new" %>
+
+<% @tweets.each do |tweet| %>
+<div class="post">
+    <div class="post-date">
+      投稿日時：<%= tweet.created_at %>
+    </div>
+    <div class="post-content">
+      <%= tweet.content %>
+    </div>
+  </div>
+<% end %>
